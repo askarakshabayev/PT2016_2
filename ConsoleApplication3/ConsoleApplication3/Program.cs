@@ -10,8 +10,17 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
-            Console.Write("www");
+            string s = "abcdefg";
+            string s1 = s.Substring(2, 3);
+
+            string s2 = s.Replace("cde", "HELLO");
+            Console.WriteLine(s2);
+
+            int index = s.IndexOf("cde");
+            Console.WriteLine(index);
+
+            Console.WriteLine(s.Length);
+
             Console.ReadKey();
         }
     }
